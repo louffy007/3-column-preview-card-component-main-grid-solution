@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@700&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--very-light-gray);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.first-car {
+  background-color: var(--bright-orange);
+  padding: 2.5rem;
+}
+.first-car h1 {
+  transform: uppercase;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--very-light-gray);
+}
+.seconde-car {
+  background-color: var(--dark-cyan);
+  padding: 2.5rem;
+}
+.third-car {
+  background-color: var(--very-dark-cyan);
+  padding: 2.5rem;
+}
