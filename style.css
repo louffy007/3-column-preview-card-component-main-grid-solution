@@ -17,25 +17,22 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
+  font-size: 15px;
 }
 .container {
-  width: 1000px;
+  width: 850px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   border-radius: 8px;
   overflow: hidden;
 }
+
 .first-car {
   background-color: var(--bright-orange);
   padding: 2.5rem;
 }
-.first-car h1 {
-  transform: uppercase;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: var(--very-light-gray);
-}
+
 .seconde-car {
   background-color: var(--dark-cyan);
   padding: 2.5rem;
@@ -43,4 +40,35 @@ body {
 .third-car {
   background-color: var(--very-dark-cyan);
   padding: 2.5rem;
+}
+h1 {
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
+}
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4rem;
+}
+button {
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  background-color: var(--very-light-gray);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+}
+.first-car button {
+  color: var(--bright-orange);
+}
+.seconde-car button {
+  color: var(--dark-cyan);
+}
+.third-car button {
+  color: var(--very-dark-cyan);
 }
