@@ -57,11 +57,13 @@ p {
   margin-bottom: 4rem;
 }
 button {
+  cursor: pointer;
   font-family: "Lexend Deca", sans-serif;
-  border: none;
+  border: 2px solid transparent;
   background-color: var(--very-light-gray);
   padding: 1rem 2rem;
   border-radius: 50px;
+  transition: all 0.3s;
 }
 .first-car button {
   color: var(--bright-orange);
@@ -71,4 +73,23 @@ button {
 }
 .third-car button {
   color: var(--very-dark-cyan);
+}
+button:hover {
+  border: 2px solid var(--transparent-white-p);
+  background-color: transparent;
+  color: var(--transparent-white-p);
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
 }
